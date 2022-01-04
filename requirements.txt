@@ -25,6 +25,7 @@ Flask==1.1.2
 Flask-Cors==3.0.10
 future==0.18.2
 gast==0.3.3
+gunicorn==19.9.0
 google-auth==1.20.1
 google-auth-oauthlib==0.4.1
 google-pasta==0.2.0
@@ -83,14 +84,14 @@ pyasn1-modules==0.2.8
 Pygments==2.4.2
 pylint==2.4.4
 pyparsing==2.4.7
-pypiwin32>=223
+
 pyrsistent==0.15.5
-python-dateutil==2.8.1
-python-slugify==4.0.1
+
+
 pytz==2020.1
 PyWavelets==1.1.1
-pywin32>=225
-pywin32-ctypes>=0.2
+
+
 pywinpty==0.5.5
 PyYAML==5.3.1
 pyzmq==18.1.0
