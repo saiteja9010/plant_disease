@@ -66,11 +66,11 @@ nbconvert==5.6.1
 nbformat==4.4.0
 networkx==2.5
 notebook==6.0.2
-numpy>=1.18.4
+numpy>=1.20.3
 oauthlib==3.1.0
 opencv-python==4.5.2.52
 opt-einsum==3.3.0
-pandas==1.1.1
+pandas==1.2.4
 pandocfilters==1.4.2
 parso==0.5.1
 pickleshare==0.7.5
