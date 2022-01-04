@@ -98,7 +98,7 @@ sklearn==0.0
 slugify==0.0.1
 soupsieve==1.9.5
 
-tensorflow>=2
+tensorflow-cpu>=2
 tensorflow-estimator>=2
 termcolor>=1.1
 terminado>=0.8
