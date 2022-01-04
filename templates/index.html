@@ -1,0 +1,77 @@
+{% extends 'base.html'%}
+
+{% block title %}
+  Home Page
+{% endblock %}
+
+
+    
+   <!--  <p>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul>
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </p> -->
+      <!-- {% if filename %}
+        <div>
+            <img src="{{ url_for('display_image', filename=filename) }}">
+             <img src="{{filename}}"> 
+            <h1>{{filename[0]}}</h1>
+            <h1>{{filename[1]}}</h1>
+            <h1>{{filename}}</h1>
+
+        </div> 
+        {% endif %} -->
+
+
+
+
+
+{% block content %}
+  <h3 class="margin">What To Do??</h3>
+  <p>Please upload the Image Below to see the results of what disease caused to your plant</p>
+
+
+<!-- <style>
+  .container{
+  }
+</style> -->
+
+
+      <form class="container" method="post" action="/" enctype="multipart/form-data">
+      <!-- <input type="text" class="form-control" placeholder="Search for..."> -->
+      <input id="inputField" type="file" name="file" class="form-control" placeholder="Upload img" autocomplete="off" required>
+      <!-- <button class="btn btn-default" type="button">Go!</button> -->
+        <input type="submit" value="Submit" class="btn btn-info">
+      </form>
+
+
+    <!-- <h2>Select a file to upload</h2>
+    <form method="post" action="/" enctype="multipart/form-data">
+        <dl>
+            <p>
+                <input type="file" name="file" class="form-control" autocomplete="off" required>
+            </p>
+        </dl>
+        <p>
+            <input type="submit" value="Submit" class="btn btn-info">
+        </p>
+    </form> -->
+
+    {% if filename %}
+        <div>
+            <img src="{{ url_for('display_image', filename=filename) }}">
+            <br><br>
+            <a href="{{url_for('display_img',filename=filename)}}" class="btn btn-default btn-lg active" role="button">Get Results</a>
+            <!-- <img src="{{filename1}}"> -->
+            <h1>{{filename}}</h1> 
+
+         </div> 
+    {% endif %}
+ 
+{% endblock %}
