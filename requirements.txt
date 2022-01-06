@@ -2,7 +2,12 @@
 certifi==2020.6.20
 chardet==3.0.4
 click==7.1.2
-cv2>=4.0.0
+opencv-python-headless
+computer==1.0.0
+cv==1.0.0
+
+imageio==2.9.0
+importlib-metadata==0.23
 Flask==1.1.2
 future==0.18.2
 gunicorn==20.0.4
