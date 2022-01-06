@@ -68,7 +68,7 @@ def mode(model,output,pretrain=False):
 num_classes = 38
 model = models.resnet34(num_classes=num_classes)
 
-PATH = "sai1.pth"
+PATH = "/sai1.pth"
 model.load_state_dict(torch.load(PATH))
 model.eval()
 # model.fc.out_features=num_classes
