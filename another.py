@@ -6,7 +6,6 @@ from PIL import Image
 from torchvision import models
 import torch.optim as optim
 import copy
-import cv2
 import os                       # for working with files
 import numpy as np              # for numerical computationss
 import pandas as pd             # for working with dataframes
