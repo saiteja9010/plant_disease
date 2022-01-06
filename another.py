@@ -3,16 +3,6 @@ import torch
 import torch.nn as nn 
 import torchvision.transforms as transforms 
 from PIL import Image
-import torch.nn as nn
-from torchvision import models
-import torch.optim as optim
-import copy
-import io
-import torch 
-import torch.nn as nn 
-import torchvision.transforms as transforms 
-from PIL import Image
-import torch.nn as nn
 from torchvision import models
 import torch.optim as optim
 import copy
@@ -20,7 +10,7 @@ import cv2
 import os                       # for working with files
 import numpy as np              # for numerical computationss
 import pandas as pd             # for working with dataframes
-import torch                    # Pytorch module 
+
 import matplotlib.pyplot as plt # for plotting informations on graph and images using tensors
 import torch.nn as nn           # for creating  neural networks
 from torch.utils.data import DataLoader # for dataloaders 
@@ -31,13 +21,11 @@ from torchvision.utils import make_grid       # for data checking
 from torchvision.datasets import ImageFolder  # for working with classes and images
 from torchsummary import summary              # for getting the summary of our model
 
-import torch
+
 import torchvision
-import torchvision.transforms as transforms
+
 import torch.nn as nn
-from torchvision import models
-import torch.optim as optim
-import copy
+
 # load model
 
 def mode(model,output,pretrain=False):
