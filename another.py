@@ -10,7 +10,7 @@ import os                       # for working with files
 import numpy as np              # for numerical computationss
 import pandas as pd             # for working with dataframes
 
-import matplotlib.pyplot as plt # for plotting informations on graph and images using tensors
+# import matplotlib.pyplot as plt # for plotting informations on graph and images using tensors
 import torch.nn as nn           # for creating  neural networks
 from torch.utils.data import DataLoader # for dataloaders 
 from PIL import Image           # for checking images
