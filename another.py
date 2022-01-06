@@ -69,8 +69,11 @@ num_classes = 38
 model = models.resnet34(num_classes=num_classes)
 
 PATH = "sai1"
-model.load_state_dict(torch.load(PATH))
+model.load_state_dict(torch.load(PATH,map_location ='cpu'))
 model.eval()
+# model = torch.load('model/pytorch_resnet50.pth',map_location ='cpu')
+# odel = net.load_state_dict(torch.load('classifier.pt', map_location=torch.device('cpu')))
+
 # model.fc.out_features=num_classes
 
 # model=mode(models.resnet18,38,pretrain=True)
