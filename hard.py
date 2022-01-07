@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 from another import transform_image, get_prediction
 from PIL import Image
  
-UPLOAD_FOLDER = 'F:/copied/static/uploads' 
+UPLOAD_FOLDER = 'static/uploads' 
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif']) 
  
 app = Flask(__name__) 
