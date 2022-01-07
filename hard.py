@@ -105,7 +105,7 @@ def display_img(filename):
 
     l.sort()
 
-    file="F:/copied/static/uploads/" + filename
+    file="static/uploads/" + filename
     file=open(file,'rb')
     img_bytes = file.read()
     tensor = transform_image(img_bytes)
