@@ -1,14 +1,6 @@
 --index-url https://download.pytorch.org/whl/cpu
 
-REMOVED: -f https://www.google.com/search?q=https://download.pytorch.org/whl/torch_stable.html
-
-This flag is generally not needed. Pip will install the appropriate CPU
-
-version of PyTorch automatically from the default index.
-
-Core Web Framework and Dependencies (Upgraded to Flask 2.x/3.x ecosystem)
-
-Flask 1.1.2 is incompatible with modern dependencies.
+Core Web Framework and Dependencies
 
 Flask>=2.3.0
 gunicorn>=21.2.0
@@ -18,14 +10,14 @@ Jinja2>=3.1.0
 itsdangerous>=2.1.0
 MarkupSafe>=2.1.0
 
-Scientific and Utility Libraries (Crucially, NumPy is updated)
+Scientific and Utility Libraries
 
-numpy>=1.26.0      # FIX: Updated from 1.19.1 to resolve the ModuleNotFoundError
+numpy>=1.26.0
 Pillow>=10.3.0
 pandas>=2.2.0
 imageio>=2.34.0
 
-Network Libraries (Updated to recent stable versions)
+Network Libraries
 
 requests>=2.32.0
 urllib3>=2.2.0
@@ -33,18 +25,16 @@ certifi>=2024.2.2
 idna>=3.6
 chardet>=5.2.0
 
-Deep Learning Libraries (Updated for modern torch/torchvision compatibility)
-
-The old 1.10.1+cpu is incompatible with modern numpy/Python.
+Deep Learning Libraries (CPU-only)
 
 torch>=2.3.0
 torchvision>=0.18.0
 torchsummary>=1.5
 
-Retaining original pins for other dependencies (assuming they are not the source of the build failure)
+Other Dependencies
 
 future==0.18.2
-importlib-metadata==0.23 # Note: This is very old, but likely fine.
+importlib-metadata==0.23
 six==1.17.0
 python-dateutil==2.9.0.post0
 pytz==2025.2
