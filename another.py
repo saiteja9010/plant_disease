@@ -68,7 +68,7 @@ def mode(model,output,pretrain=False):
 num_classes = 38
 model = models.resnet34(num_classes=num_classes)
 
-PATH = "sai1"
+PATH = "sai1.pth"
 model.load_state_dict(torch.load(PATH,map_location ='cpu'))
 model.eval()
 # model = torch.load('model/pytorch_resnet50.pth',map_location ='cpu')
@@ -108,3 +108,4 @@ def get_prediction(image_tensor):
         # max returns (value ,index)
     _, predicted = torch.max(outputs.data, 1)
     return predicted[0]
+
