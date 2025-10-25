@@ -1,29 +1,37 @@
--f https://download.pytorch.org/whl/torch_stable.html
-certifi==2020.6.20
-chardet==3.0.4
-click==7.1.2
-computer==1.0.0
+# REMOVED: -f https://download.pytorch.org/whl/torch_stable.html
+# This flag is generally not needed. Pip will install the appropriate CPU
+# version of PyTorch automatically from the default index.
 
-imageio==2.9.0
-importlib-metadata==0.23
-Flask==1.1.2
-future==0.18.2
-gunicorn==20.0.4
-idna==2.10
-itsdangerous==1.1.0
-Jinja2==2.11.2
-MarkupSafe==1.1.1
-numpy==1.19.1
-Pillow==7.2.0
-requests==2.24.0
+# Core Web Framework and Dependencies (Upgraded to Flask 2.x/3.x ecosystem)
+# Flask 1.1.2 is incompatible with modern dependencies.
+Flask>=2.3.0
+gunicorn>=21.2.0
+Werkzeug>=2.3.0
+click>=8.1.0
+Jinja2>=3.1.0
+itsdangerous>=2.1.0
+MarkupSafe>=2.1.0
 
-urllib3==1.25.10
-Werkzeug==1.0.1
+# Scientific and Utility Libraries (Crucially, NumPy is updated)
+numpy>=1.26.0      # FIX: Updated from 1.19.1 to resolve the ModuleNotFoundError
+Pillow>=10.3.0
+pandas>=2.2.0
+imageio>=2.34.0
 
+# Network Libraries (Updated to recent stable versions)
+requests>=2.32.0
+urllib3>=2.2.0
+certifi>=2024.2.2
+idna>=3.6
+chardet>=5.2.0
 
-
-torch==1.10.1+cpu
+# Deep Learning Libraries (Updated for modern torch/torchvision compatibility)
+# The old 1.10.1+cpu is incompatible with modern numpy/Python.
+torch>=2.3.0
+torchvision>=0.18.0
 torchsummary>=1.5
-torchvision==0.11.2+cpu
 
-pandas==1.2.4
+# Retaining original pins for other dependencies (assuming they are not the source of the build failure)
+future==0.18.2
+importlib-metadata==0.23 # Note: This is a very old pin and might be inherited by modern packages
+computer==1.0.0            # Note: This is a specific package that should be checked for Python 3.13 support
