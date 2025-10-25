@@ -1,6 +1,5 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-# Core Web Framework and Dependencies
 Flask>=2.3.0
 gunicorn>=21.2.0
 Werkzeug>=2.3.0
@@ -9,37 +8,19 @@ Jinja2>=3.1.0
 itsdangerous>=2.1.0
 MarkupSafe>=2.1.0
 
-# Scientific and Utility Libraries
 numpy>=1.26.0
 Pillow>=10.3.0
 pandas>=2.2.0
 imageio>=2.34.0
 
-# Network Libraries
 requests>=2.32.0
 urllib3>=2.2.0
 certifi>=2024.2.2
 idna>=3.6
 chardet>=5.2.0
 
-# Deep Learning Libraries (CPU-only)
 torch>=2.3.0
 torchvision>=0.18.0
 torchsummary>=1.5
 
-# Other Dependencies
-future==0.18.2
-importlib-metadata==0.23
-six==1.17.0
-python-dateutil==2.9.0.post0
-pytz==2025.2
-tzdata==2025.2
-zipp==3.23.0
-filelock==3.20.0
-packaging==25.0
-setuptools==80.9.0
-mpmath==1.3.0
-sympy==1.14.0
-networkx==3.5
-blinker==1.9.0
-computer==1.0.0
+# other dependencies...
