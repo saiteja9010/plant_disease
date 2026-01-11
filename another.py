@@ -49,4 +49,12 @@ def get_prediction(image_tensor):
 
     return predicted.item()
 
+with torch.no_grad():
+    outputs = model(image_tensor)
+    probs = torch.softmax(outputs, dim=1)
+    top_prob, top_class = probs.max(1)
+
+print("Top prob:", top_prob.item())
+print("Class index:", top_class.item())
+
 
