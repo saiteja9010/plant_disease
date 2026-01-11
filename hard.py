@@ -62,7 +62,7 @@ def upload_and_predict():
 
             # TRANSFORM & PREDICT
             tensor = transform_image(img)
-            prediction = get_prediction(tensor).item()
+            prediction = get_prediction(tensor)
             result = CLASSES[prediction]
 
             return render_template('prediction.html', result=result)
